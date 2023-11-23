@@ -1,0 +1,115 @@
+/,
+
+//declare(strict_types = 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 'on');
+//session_start();
+//include_once 'function.php';
+//
+////dd($_SESSION);
+////dd($_COOKIE);
+//
+//function showForm():string
+//{
+////    return $form ='
+////    <form action=""method="post">
+////    <input type="text" name="login">
+////    <input type="password" name="password">
+////    <input type="submit" name="btnLogin">
+////    </form>
+////    ';
+//    return $form = '<form>
+//                <div class="row mb-3">
+//                  <label for="inputEmail3"name="password" class="col-sm-2 col-form-label">Звать как</label>
+//                  <div class="col-sm-10">
+//                    <input type="text" class="form-control" id="inputText">
+//                  </div>
+//                </div>
+//
+//                </div>
+//                <div class="row mb-3">
+//                  <label for="inputPassword3" name="login" class="col-sm-2 col-form-label">Скажи пароль)</label>
+//                  <div class="col-sm-10">
+//                    <input type="password" class="form-control" id="inputPassword">
+//                  </div>
+//                </div>
+//                </fieldset>
+//                <div class="row mb-3">
+//                  <div class="col-sm-10 offset-sm-2">
+//
+//                  </div>
+//                </div>
+//                <div class="text-center">
+//                  <button type="submit"  name="btnLogin" class="btn btn-primary">ну допустим</button>
+//                  <button type="reset" class="btn btn-secondary">пошел в жепу</button>
+//                </div>
+//              </form>
+//    ';
+//}
+//function goUrl(string $url){
+//    echo '<script type="text/javascript">location="';
+//    echo $url;
+//    echo '";</script>';
+//}
+//
+//function login()
+//{
+//    if (!isset($_POST['btnLogin'])){
+//        echo showForm();
+//
+//    }else{
+//        $check = checkLogin($_POST['login'],$_POST['password']);
+//        echo '(';
+//        if($check = ''){
+//            goUrl( '/registr/registr.php');
+//            echo 'дап';
+//        }else{
+//            echo $check;
+//            echo ')';
+//        }
+//
+//    }
+//}
+//
+//function checkLogin(string $login, string $password): string
+//{
+//$login = $_POST('login');
+//$password = $_POST('password');
+//$msg ='';
+//
+//if (empty($login || $password)){
+//    $msg .= "Введите че-то";
+//}
+//elseif (strlen($login)<5){
+//    $msg.= "имя должно быть больше 5 символов";
+//}
+//    if (empty($password) ){
+//        $msg .= "Введите че-то";
+//    }
+//    elseif (strlen($password)<2){
+//        $msg.= "пароль должен содержать больше двух символов";
+//    }
+//    return $msg;
+//}
+//function Knopka(){
+//    if(isset($_POST['btn2'])){
+//        unset($_SESSION['user']);
+//    }
+//}
+//
+//
+//function main()
+//{
+//    if ($_SESSION['$user']='admin'){
+//        echo '<h1> dashboard</h1><br>';
+//        echo '<a href="php?action=logout">Домой</a>';
+//    }else{
+//        login();
+//    }
+//}
+//function logout()
+//{
+//    $_SESSION['user']='';
+//}
+//login();
+

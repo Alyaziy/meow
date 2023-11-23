@@ -1,0 +1,11 @@
+{% extends "layout.twig" %}
+
+{% block Hueta %}
+{%  for article in articles %}
+    <a href="single-post.html"><img src="/template/frontend/assets/img/zayz.jpg" alt="" class="img-fluid"></a>
+    <div class="post-meta"><span class="date">Sport</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+    <h2><a href="single-post.html">{{article.title}}</a></h2>
+
+{% endfor %}
+
+{% endblock %}
